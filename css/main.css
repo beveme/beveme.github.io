@@ -37,3 +37,17 @@ p {
     font-size: 14px;
     background-color: green;
 }
+
+aside {
+    width: 200px;
+    height: 85px;
+    padding: 10px 0px;
+    margin-top: 300px;
+    background-color: red;
+}
+
+aside p {
+    height: 20px;
+    padding: 20px 0px;
+    background-color: yellow;
+}
