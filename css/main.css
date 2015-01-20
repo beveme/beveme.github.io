@@ -51,3 +51,8 @@ aside p {
     padding: 20px 0px;
     background-color: yellow;
 }
+
+.videointro {
+    width: 100%;
+    margin: auto;
+}
