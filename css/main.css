@@ -23,7 +23,7 @@ div {
 h1 {
     height: 34px;
     font-size: 2em;
-    background-color: orange;
+    /*background-color: orange;*/
 }
 
 h2 {
@@ -35,14 +35,13 @@ h2 {
 p {
     height: 12px;
     font-size: 14px;
-    background-color: green;
 }
 
 aside {
     width: 200px;
     height: 85px;
     padding: 10px 0px;
-    margin-top: 300px;
+    margin-top: 120px;
     background-color: red;
 }
 
@@ -50,6 +49,18 @@ aside p {
     height: 20px;
     padding: 20px 0px;
     background-color: yellow;
+}
+
+.credits {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.credits h1,h2 {
+    font-size: 1.2em;
+    background-color: #8fb8bf;
+    margin: 0px;
+    height: 25px;
 }
 
 .videointro {
