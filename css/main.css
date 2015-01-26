@@ -63,7 +63,17 @@ aside p {
     height: 25px;
 }
 
+.credits h1 {
+    padding-top: 10px;
+}
+
+.picture {
+    max-width: 300px;
+    padding-bottom: 5px;
+}
+
 .videointro {
     width: 90%;
+    max-width: 400px;
     margin: 20px auto;
 }
