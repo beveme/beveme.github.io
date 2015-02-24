@@ -11,6 +11,25 @@ div {
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
+.introBanner {
+    max-height: 100px;
+    max-width: 180px;
+    margin: 20px auto;
+    background: #1386d8;
+    color: white;
+}
+
+.introBanner p {
+    font-size: 30px;
+}
+
+.flagLong {
+    height: 80px;
+    width: 150px;
+    margin-top: 150px;
+    background: #1386d8;
+}
+
 .sky {
     width: 100%;
     height: 450px;
