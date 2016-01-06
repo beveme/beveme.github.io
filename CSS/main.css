@@ -23,36 +23,7 @@ h1, h2, h3, p, a {
 
 @charset "UTF-8";
 
-/* Top Nav */
-
-/*nav {
-    display: flex;
-    justify-content: center;
-}
-
-ul {
-    width: 25%;
-    height: 60px;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(20,20,20);
-}
-
-ul, li {
-    list-style: none;
-}
-
-nav ul a li {
-    height: 100%;
-    padding: 20px 0 0 0;
-    background: rgb(240,240,240);
-}*/
-
-
-/* better nav */
+/* Top Navigation */
 
 nav {
     width: 100%;
@@ -77,8 +48,15 @@ nav a p:nth-child(2) {
     border-right: 0px solid rgb(20,20,20);
 }
 
+/* Group2 Navigation */
+
+
 
 /* Custom Styles */
+
+img {
+    width: 100%;
+}
 
 .sitename {
     width: 100%;
@@ -104,6 +82,88 @@ body {
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+/* Section Styles */
+
+#group1 .sitename {
+    top: calc(50% - 20px);
+}
+
+#group1 .reflection {
+    position: relative;
+}
+
+#group1 .reflection:before {
+    width: 100%;
+    content: "beve.me";
+    position: absolute;
+    top: calc(50% + 16px);
+    left: 0;
+    transform: scaleY(-1);
+}
+
+#group1 .reflection:after {
+    width: 100%;
+    height: 60%; /*80px*/
+    content: "";
+    position: absolute;
+    top: calc(50% + 38px);
+    left: 0;
+    transform: scaleY(-1);
+    background: linear-gradient(to top, rgba(250,250,250,0.8), rgba(250,250,250,1) 60%);
+}
+
+#group2 .pback header {
+    top: 25%;
+}
+
+#group2 .pbase {
+    perspective: 1000px;
+}
+
+#group2 .pbase nav {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    background: rgb(250,250,250);
+    box-shadow: 0 2px 2px rgb(10,10,10);
+}
+
+#group2 .pbase #homenav {
+    top: 40%;
+    left: calc(30% - 75px);
+    transform: rotateY(50deg);
+}
+
+#group2 .pbase #lessonsnav {
+    top: 40%;
+    left: calc(40% - 75px);
+    transform: rotateY(45deg);
+}
+
+#group2 .pbase #practicenav {
+    top: 40%;
+    left: calc(60% - 75px);
+    transform: rotateY(-45deg);
+}
+
+#group2 .pbase #contactnav {
+    top: 40%;
+    left: calc(70% - 75px);
+    transform: rotateY(-50deg);
+}
+
+#group2 .pbase nav a {
+    width: 100%;
+    height: 100%;
+}
+
+#group2 .pfront header {
+    position: relative;
+    top: 75%;
+}
+
+/* For Parallax Effect */
 
 #group1 {
     z-index: 5;
@@ -161,8 +221,6 @@ body {
     background: rgb(250,250,250);
 }
 
-/* For Parallax Effect */
-
 .parallaxcontainer {
     height: 100%;
     overflow-x: hidden;
@@ -172,7 +230,7 @@ body {
 }
 
 .pgroup {
-    height: 100%;
+    height: calc(100% - 58px);
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -208,8 +266,4 @@ body {
     -webkit-transform: translateZ(-600px) scale(3);
     transform: translateZ(-600px) scale(3);
     z-index: 2;
-}
-
-img {
-    width: 100%;
 }
