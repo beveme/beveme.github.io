@@ -125,14 +125,14 @@ body {
     width: 150px;
     height: 200px;
     position: absolute;
-    background: rgb(250,250,250);
+    /*background: rgb(250,250,250);*/
     box-shadow: 0 2px 2px rgb(10,10,10);
 }
 
 #group2 .pbase #homenav {
     top: 40%;
-    left: calc(30% - 75px);
-    transform: rotateY(50deg);
+    left: calc(30% - 50px); /*75*/
+    /*transform: rotateY(50deg);*/
 }
 
 #group2 .pbase #lessonsnav {
@@ -161,6 +161,36 @@ body {
 #group2 .pfront header {
     position: relative;
     top: 75%;
+}
+
+#group4 {
+    color: rgb(250,250,250);
+}
+
+#group4 #g4header {
+    width: 100%;
+    height: 40px;
+    padding: 10px 0 10px 0;
+    background: rgba(50,50,50,0.2);
+}
+
+#group5 .frame {
+    display: flex;
+    border: 100px solid black;
+}
+
+#group5 aside {
+    width: 40%;
+    color: whitesmoke;
+    background: black;
+}
+
+#group5 .pbase {
+    color: white;
+    background: black;
+    flex-flow: column;
+    flex-grow: column;
+    border: 100px solid black;
 }
 
 /* For Parallax Effect */
