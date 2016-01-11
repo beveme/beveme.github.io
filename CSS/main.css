@@ -33,6 +33,7 @@ nav {
     width: 100%;
     height: 60px;
     display: flex;
+    flex-flow: row;
     background: rgb(240,240,240);
 }
 
@@ -46,7 +47,12 @@ nav a {
 }
 
 nav a p:nth-child(1) {
-    border-right: 1px solid black;
+    border-left: 1px solid rgb(160,160,160);
+    border-right: 1px solid rgb(160,160,160);
+}
+
+nav a:first-child p {
+    border-left: 0px solid rgb(20,20,20);
 }
 
 nav a:last-child p {
@@ -56,6 +62,11 @@ nav a:last-child p {
 nav a:hover {
     color: rgba(240,240,240,0.8);
     background: rgb(50,50,50);
+}
+
+nav a:hover p {
+    border-left: 0px solid rgb(20,20,20);
+    border-right: 0px solid rgb(20,20,20);
 }
 
 main {
@@ -310,4 +321,10 @@ body {
     -webkit-transform: translateZ(-600px) scale(3);
     transform: translateZ(-600px) scale(3);
     z-index: 2;
+}
+
+@media all and (max-width: 360px) {
+    nav {flex-flow: column; height: 240px;}
+    nav a {width: 100%; height: 40px; border-bottom: background: pink;}
+    .topnavcontainer nav a p {padding: 0 0 10px 0; border: none;}
 }
