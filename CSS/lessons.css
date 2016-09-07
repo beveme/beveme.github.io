@@ -1,0 +1,117 @@
+#mainBackground {
+    background: rgb(150,150,150);
+}
+
+.blue {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    color: rgb(100,100,250);
+}
+
+#lessonTitle {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: rgb(250,250,250);
+    background: rgb(100,100,250);
+    /*box-shadow: 10px 0 4px 0;*/
+}
+
+#lessonTitle h1 {
+    width: 100px;
+    padding: 24px 0 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#lessonTitle h2 {
+    width: 100px;
+    padding: 15px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+#subnav {
+    width: 420px;
+    height: 24px;
+    margin: 0 auto;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: center;
+    background: rgba(250,250,250,0.0);
+}
+
+#subnav a {
+    width: 25%;
+    padding: 0;
+}
+
+#activesubnav {
+    background: rgb(100,100,250);
+}
+
+#lessonIntro1 {
+    width: 380px;
+    margin: 200px auto 0 auto;
+    padding: 20px;
+    background: rgb(250,250,250);
+}
+
+#lessonIntro2 , #lessonIntro3 {
+    width: 380px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(250,250,250);
+}
+
+.tableOfContents {
+    display: flex;
+    color: rgb(250,250,250);
+}
+
+.tableOfContents h1 {
+    width: 260px;
+    margin: 0 0 0 10%;
+    font-size: 30px;
+}
+
+.tableOfContents p {
+    font-size: 30px;
+}
+
+.cards {
+    width: 372px;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+    background: rgb(250,250,250);
+    border-left: 8px solid rgb(150,150,250);
+}
+
+.cardButton {
+    color: rgb(250,250,250);
+    background: rgb(150,150,250);
+}
+
+#marks {
+    margin: 20px 0 0 0;
+}
+
+@media all and (max-width: 420px) {
+    .tableOfContents {flex-flow: column; text-align: center;}
+    .tableOfContents h1 {width: 100%; margin: 0;}
+    .tableOfContents h2 {color: rgb(220,220,220);}
+    #subnav {width: 100%;}
+    #lessonIntro1 {width: calc(100% - 40px);}
+    #lessonIntro2 {width: calc(100% - 40px);}
+    .cards {width: calc(100% - 48px); box-shadow: none;}
+}

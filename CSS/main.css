@@ -14,8 +14,10 @@ html, body {
     height: 100%;
 }
 
+/* Custom Styles */
+
 body {
-    background: rgb(200,200,200);
+    background: rgb(240,240,240);
 }
 
 h1, h2, h3, p, a {
@@ -33,7 +35,8 @@ h1, h2, h3, p, a {
     top: 0;
     left: 0;
     right: 0;
-z-index: 1;
+    z-index: 2;
+    box-shadow: 0 0 2px 0;
 }
 
 nav {
