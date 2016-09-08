@@ -16,6 +16,8 @@ html, body {
 
 /* Custom Styles */
 
+/* blue is 100 150 250*/
+
 body {
     background: rgb(240,240,240);
 }
@@ -36,7 +38,8 @@ h1, h2, h3, p, a {
     left: 0;
     right: 0;
     z-index: 2;
-    box-shadow: 0 0 2px 0;
+    /*box-shadow: 0 0 2px 0;*/
+    box-shadow: 0 2px 2px rgba(0,0,0,0.8);
 }
 
 nav {
@@ -62,8 +65,8 @@ nav a:hover {
 }
 
 #activenav {
-    border-top: 10px solid rgb(150,150,250);
-    padding: 10px 0 0 0
+    border-top: 10px solid rgb(100,150,250);
+    padding: 10px 0 0 0;
 }
 
 main {
@@ -78,4 +81,5 @@ main {
 
 
 @media all and (max-width: 420px) {
+    .topnavcontainer {font-size: 14px;}
 }
